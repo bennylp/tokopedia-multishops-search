@@ -22,27 +22,33 @@ bike_shops = {
     "technobike": 1230145,
     "trzbik": 9392621,
     "tkbike (mahal bisa sampe 25%)": 7152778,
-    "bikecorpsurabaya": 4458922,
+    "bikecorpsurabaya (Surabaya)": 4458922,
     "bikecenter (lebih mahal 10-20%)": 5397991,  # lebih mahal (303s 24jt)
     "maxxiebike01": 9127557,  # asesoris kecil2
     "bitesnbikes": 5937186,
     "collincycling (agak mahal)": 2445583,  # agak mahal (303s 22.5jt)
-    "rizkylbf": 2557713,
+    "rizkylbf (Surabaya)": 2557713,
     "overflow7": 2537227,
     "elvesbikeid": 9525691,
     "bikebikeajaid": 9673127,
     "lunalabobike": 9287351,
     "klass": 9068286, # agak mahal (r8020 18.5jt)
+    "racoonbike": 6819302,
+    "nusabike (medan)": 9140640,
     
     # parts
+    "bikesupply (Surabaya)": 2586744,
+    "alatsepeda2010 (Surabaya)": 712973,
+    "tokosepedamagnolia": 1652810,
     "phjazz-lapak (kediri)": 1204958,
     "sgsbike (lbh mahal ~25%)": 8758036,
     "istimewabike (murah)": 6282811,
     "original-zone": 135665,
     "klarinda (murah)": 8725993,
+    "vesantra (tangerang)": 241839,
 };
 
-#bike_shops = {"klarinda": 8725993,}
+#bike_shops = {"vesantra": 0,}
 
 garmin_shops = {
     "garmin": 0,
@@ -76,7 +82,7 @@ def multi_shops_search(shops, keywords):
                     break
         if not shop_id:
             assert not "Shop id not found"
-        time.sleep(0.5)
+        time.sleep(0.1)
 
         url = f'https://ace.tokopedia.com/search/product/v3?q={keywords}&shop_id={shop_id}&rows=80&start=0&full_domain=www.tokopedia.com&scheme=https&device=desktop&source=shop_product'
         req = requests.get(url, headers=headers)
@@ -97,7 +103,7 @@ def multi_shops_search(shops, keywords):
             </td>\n"""
             html_out += f"""
             <td>
-                <a href="{product['url']}">{product['name']}</a><BR>
+                <a href="{product['url']}" target="_blank">{product['name']}</a><BR>
                 <strong>{product['price']}</strong><BR>
                 Rating: {product['rating']}<BR>
                 {product['count_sold']+'<BR>' if 'count_sold' in product else ''}
