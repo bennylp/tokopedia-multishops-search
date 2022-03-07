@@ -13,6 +13,7 @@ bike_shops = {
     "hospecialty": 5554437,
     "hobbyone": 244797,
     "sepeda98": 257358,
+    "charliebike": 2409656,
     "charliebikeshop": 1758316,
     "charliebikeshop2": 9097897,
     "velocycle": 2143789,
@@ -21,9 +22,11 @@ bike_shops = {
     "velospeed": 7893143,
     "technobike": 1230145,
     "trzbik": 9392621,
+    "sepedakitaonline (sby, murah)": 8402376,
     "tkbike (mahal bisa sampe 25%)": 7152778,
     "bikecorpsurabaya (Surabaya)": 4458922,
     "bikecenter (lebih mahal 10-20%)": 5397991,  # lebih mahal (303s 24jt)
+    "cyclecoripd (sby)": 1675277,
     "maxxiebike01": 9127557,  # asesoris kecil2
     "bitesnbikes": 5937186,
     "collincycling (agak mahal)": 2445583,  # agak mahal (303s 22.5jt)
@@ -35,6 +38,17 @@ bike_shops = {
     "klass": 9068286, # agak mahal (r8020 18.5jt)
     "racoonbike": 6819302,
     "nusabike (medan)": 9140640,
+    "felison": 9000920,
+    'babonline- (build a bike)': 6599421,
+    'bosfikstore (awas palsu!)': 5370716,  # rantai dura ace palsu!
+    'kokabikeshop (murah)': 9696241,
+    'gudzbike': 11257317,
+    "bikepremiumstore": 9722016,
+    "serbasepeda": 2240953,
+    "wearinasia": 2434564,
+    "mbikes": 8671369,
+    "dhypebike": 10598413,
+    "abbike": 9970356,
     
     # parts
     "bikesupply (Surabaya)": 2586744,
@@ -46,9 +60,17 @@ bike_shops = {
     "original-zone": 135665,
     "klarinda (murah)": 8725993,
     "vesantra (tangerang)": 241839,
-};
+    "hangermedal": 290114,
 
-#bike_shops = {"vesantra": 0,}
+    # apparels
+    "velociteid (sby)": 11287509,
+    "velomixbikeshop (sby)": 4115253,
+    "jerry-s (sby)": 2240944,
+}
+
+#bike_shops = {
+#    "sepedakitaonline (sby, murah)": 8402376,
+#}
 
 garmin_shops = {
     "garmin": 0,
